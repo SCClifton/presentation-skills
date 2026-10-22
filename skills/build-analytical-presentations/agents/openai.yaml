@@ -1,0 +1,6 @@
+interface:
+  display_name: "Analytical presentations"
+  short_description: "Build clear, evidence-based presentation narratives"
+  default_prompt: "Use $build-analytical-presentations to turn this brief and evidence into a clear presentation."
+policy:
+  allow_implicit_invocation: true

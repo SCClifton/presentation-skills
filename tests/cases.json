@@ -1,0 +1,42 @@
+[
+  {
+    "id": "business-trial",
+    "should_trigger": true,
+    "request": "Prepare a six-slide decision storyboard for a service manager. All figures are fictional. A five-day sample at one desk found median waiting of 24 minutes, including 14 minutes attributed to verification. Propose a two-week trial moving document checks earlier, using existing staff, capped at 2,000 budget units. Success means median waiting at most 18 minutes and no increase from 6 repeat requests per 100 completed requests. The audience knows the background. Include headline, body copy, evidence qualification and layout brief per slide. Do not invent trial results. Use plain ASCII."
+  },
+  {
+    "id": "technical-review",
+    "should_trigger": true,
+    "request": "Prepare a six-slide technical decision storyboard for a fictional document-processing service. At 100 documents per minute, fixed replay testing found p95 response time of 1.4 seconds and 2 failures per 1,000 requests. At 150 documents per minute, the results were 2.8 seconds and 9 failures per 1,000. Agreed acceptance limits are p95 at most 2 seconds and failures at most 5 per 1,000. Real document mix, overlapping deployments and long-duration running remain untested. Recommend a bounded pilot with monitoring and a stop rule. Include headline, body copy, evidence qualification and layout brief per slide. Do not claim production readiness. Use plain ASCII."
+  },
+  {
+    "id": "independent-reading",
+    "should_trigger": true,
+    "request": "Restructure my long presentation so it can be read without a speaker. The readers are new to the process. Improve the explanatory sequence, chapter transitions, diagram briefs and conclusion while retaining the supplied evidence and company template."
+  },
+  {
+    "id": "brand-adaptation",
+    "should_trigger": true,
+    "request": "Adapt this analytical decision deck for another organisation. Use its supplied template and audience brief, retain the measured facts, remove irrelevant background and make the decision clear. Explain which narrative choices should change rather than just replacing the logo."
+  },
+  {
+    "id": "local-spelling",
+    "should_trigger": false,
+    "request": "Correct the spelling in this slide title only: 'Verificaton results'. Return only the corrected title."
+  },
+  {
+    "id": "conversion-only",
+    "should_trigger": false,
+    "request": "Convert this supplied presentation to PDF without changing the content or layout."
+  },
+  {
+    "id": "colour-only",
+    "should_trigger": false,
+    "request": "Change only the title colour on slide 4 to the supplied brand colour. Keep every word and object position."
+  },
+  {
+    "id": "fact-extraction",
+    "should_trigger": false,
+    "request": "Extract the exact date and the three amounts from slide 6. Do not review or rewrite the presentation."
+  }
+]
