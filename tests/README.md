@@ -18,3 +18,5 @@ Evaluate positive outputs on:
 Do not require exact wording, a fixed chapter list, or the same layouts across models. Record model and host versions, discovery configuration, prompts, observable skill loads, output paths, failures, and limitations. Test each intended host independently; shared packaging does not prove shared behaviour.
 
 If a host is unavailable or unauthenticated, record it as untested. Do not substitute a hand-written answer and report a cross-model pass.
+
+The reading and adaptation cases contain their own fictional source material and template briefs. The editable-delivery case additionally requires a presentation authoring and rendering runtime. Inspect the saved file's object structure and final renders; a storyboard alone does not pass file delivery, even when it is the correct fallback for an unavailable runtime.

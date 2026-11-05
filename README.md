@@ -18,9 +18,15 @@ From the repository root, the following commands create links only if those link
 
 ```sh
 skill_path="$PWD/skills/build-analytical-presentations"
-mkdir -p "$HOME/.claude/skills" "$HOME/.agents/skills"
-ln -s "$skill_path" "$HOME/.claude/skills/build-analytical-presentations"
-ln -s "$skill_path" "$HOME/.agents/skills/build-analytical-presentations"
+for skill_dir in "$HOME/.claude/skills" "$HOME/.agents/skills"; do
+  skill_link="$skill_dir/build-analytical-presentations"
+  if [ -e "$skill_link" ] || [ -L "$skill_link" ]; then
+    printf 'Already exists, inspect before installing: %s\n' "$skill_link"
+  else
+    mkdir -p "$skill_dir"
+    ln -s "$skill_path" "$skill_link"
+  fi
+done
 ```
 
 If your installed Codex uses the legacy directory, use that directory instead of adding another copy. Do not overwrite an existing skill. Inspect and reconcile it deliberately. These commands do not install a renderer or grant permission to publish task material.
@@ -46,6 +52,8 @@ The description also supports automatic selection for substantial presentation w
 
 Other environments can read the complete `SKILL.md` and its relevant references as task instructions. Reading one file does not implement a host's automatic skill discovery, permissions, or rendering capability. Ordinary chat products may require a supported skill upload or plugin mechanism; a GitHub URL alone does not install a skill. Behaviour should be checked in each intended host.
 
+These commands are for local skill discovery. OpenAI recommends plugin packaging for an installable distribution through its product directory. This repository supplies the portable skill folder and does not claim to be a published plugin.
+
 ## Validate
 
 ```sh
@@ -58,7 +66,7 @@ This checks the package structure, frontmatter, reference links, plain ASCII tex
 
 The package follows the [Agent Skills specification](https://agentskills.io/specification). The core contains the workflow and loads detailed references selectively. Product-specific UI metadata stays in `agents/openai.yaml`.
 
-Authoring and installation guidance was checked against [OpenAI skills documentation](https://developers.openai.com/codex/skills/), [Claude Code skills documentation](https://code.claude.com/docs/en/skills), and [Anthropic skill-authoring guidance](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) on 20 October 2026. Discovery paths and host features can change. Check the installed version before changing configuration.
+Authoring and installation guidance was checked against [OpenAI skills documentation](https://developers.openai.com/codex/skills/), [Claude Code skills documentation](https://code.claude.com/docs/en/skills), and [Anthropic skill-authoring guidance](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) on 5 November 2026. Discovery paths and host features can change. Check the installed version before changing configuration.
 
 ## Licence
 

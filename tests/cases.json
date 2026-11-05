@@ -12,12 +12,17 @@
   {
     "id": "independent-reading",
     "should_trigger": true,
-    "request": "Restructure my long presentation so it can be read without a speaker. The readers are new to the process. Improve the explanatory sequence, chapter transitions, diagram briefs and conclusion while retaining the supplied evidence and company template."
+    "request": "Create an eight-slide teaching storyboard that can be read without a speaker by people new to a fictional service process. Use these unordered source notes: completed requests enter an archive; validation checks whether required fields are present; a request is one submitted form; intake records the form and time; incomplete forms return to the requester before approval; approval is a separate authorised decision; a five-day sample at one desk found median waiting of 24 minutes; a process study attributed 14 minutes to verification; earlier document checking is a proposed change and has not been tested. Use a plain white template with dark blue headings, a small section label and source notes below evidence. Explain the process before the proposed change, connect sections and close the opening learning question. Include each slide's headline, body copy, evidence qualification and layout brief. Do not imply validation grants approval or that the proposed change has worked. All facts are fictional."
   },
   {
     "id": "brand-adaptation",
     "should_trigger": true,
-    "request": "Adapt this analytical decision deck for another organisation. Use its supplied template and audience brief, retain the measured facts, remove irrelevant background and make the decision clear. Explain which narrative choices should change rather than just replacing the logo."
+    "request": "Adapt this fictional teaching storyboard for an executive deciding whether to authorise a bounded trial. Existing slides in order are: 1 What is a request? 2 Intake records the submitted form. 3 Validation checks required fields and returns incomplete forms. 4 Approval is a separate authorised decision. 5 A five-day sample at one desk measured median waiting of 24 minutes; a process study attributed 14 minutes to verification. 6 Earlier document checking is an untested proposal. The executive already knows the process. Create a six-slide decision storyboard for a two-week trial using existing staff and a cost cap of 2,000 budget units. Success requires median waiting at most 18 minutes and no increase from 6 repeat requests per 100 completed requests. Use the new template: white background, dark green headings, amber emphasis, and a source note below each evidence object. Retain measured facts and distinguish targets and proposals. Include headline, copy, evidence and layout brief, then explain the narrative changes. Do not invent trial results."
+  },
+  {
+    "id": "editable-delivery",
+    "should_trigger": true,
+    "request": "Create an editable six-slide PowerPoint for a fictional document-processing pilot decision. At 100 documents per minute, fixed replay tests found p95 response time of 1.4 seconds and 2 failures per 1,000 requests. At 150 documents per minute, results were 2.8 seconds and 9 failures per 1,000. Acceptance limits are p95 at most 2 seconds and at most 5 failures per 1,000. Real document mix, overlapping deployments and long-duration operation remain untested. Recommend a bounded monitored pilot with a stop rule. Use a white background with dark blue text and teal emphasis; no logo. Keep text and tables editable and use native charts if the authoring tool supports them. Render and inspect every saved slide before delivery. Preserve all units, thresholds and evidence limits, and do not claim production readiness. If the runtime cannot author or render PowerPoint, report the unavailable capability and provide a clearly labelled storyboard without claiming a completed file."
   },
   {
     "id": "local-spelling",
